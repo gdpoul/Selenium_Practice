@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+	<configuration>
+		<theme>DARK</theme>
+		<encoding>UTF-8</encoding>
+		<protocol>HTTPS</protocol>
+		<timelineEnabled>true</timelineEnabled>
+		<enableOfflineMode>false</enableOfflineMode>
+		<thumbnailForBase64>false</thumbnailForBase64>
+		<documentTitle>Extent Report 1</documentTitle>
+		<reportName>Reporter1</reportName>
+     	<timeStampFormat>dd MMM, yyyy hh:mm:ss a</timeStampFormat>
+		<scripts>document.getElementsByClassName('logo')[0].style.display=\"none\"</scripts>
+		<styles></styles>
+     </configuration>
+</extentreports>
