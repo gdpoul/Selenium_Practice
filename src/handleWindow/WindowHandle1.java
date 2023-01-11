@@ -20,11 +20,11 @@ public class WindowHandle1 {
 		String parentHandle = driver.getWindowHandle();
 		Set<String> allHandle = driver.getWindowHandles();
 		
-		for(String s:allHandle)
+		for(String handle:allHandle)
 		{
-			if(!(parentHandle).equals(s))
+			if(!(parentHandle).equals(handle))
 			{
-				driver.switchTo().window(s);
+				driver.switchTo().window(handle);
 				driver.findElement(By.xpath("//input[@placeholder='Search Wikipedia']")).sendKeys("Selenium");
 				driver.findElement(By.id("searchButton")).click();
 			}
