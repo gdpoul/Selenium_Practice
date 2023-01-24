@@ -18,10 +18,10 @@ public class SingleFileUpload {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));		
 		driver.get("https://davidwalsh.name/demo/multiple-file-upload.php");
 		
-		// upload file using sendKeys()
+		// upload single file using sendKeys()
 		WebElement uploadFile = driver.findElement(By.id("filesToUpload"));
-		File file=new File("./SpeckyfoxLogo.png");
-		uploadFile.sendKeys(file.getAbsolutePath());
+		File file1=new File("./screenshots/SpeckyfoxLogo.png");
+		uploadFile.sendKeys(file1.getAbsolutePath());
 	}
 
 }
