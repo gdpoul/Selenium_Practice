@@ -21,9 +21,9 @@ public class Frame1 {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.get("https://www.globalsqa.com/demo-site/frames-and-windows/#iFrame");
 
-//		driver.switchTo().frame("globalSqa");
-		WebDriverWait wb=new WebDriverWait(driver, Duration.ofSeconds(10));
-		wb.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("globalSqa"));
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@name='globalSqa']")));
+//		WebDriverWait wb=new WebDriverWait(driver, Duration.ofSeconds(10));
+//		wb.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt("globalSqa"));
 		
 	
 		Actions act = new Actions(driver);
